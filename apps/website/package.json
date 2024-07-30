@@ -9,6 +9,9 @@
 		"directory": "apps/website"
 	},
 	"type": "module",
+	"imports": {
+		"#src/*": "./src/*"
+	},
 	"scripts": {
 		"build": "next build",
 		"dev": "next dev --turbo",
@@ -16,9 +19,6 @@
 		"lint:fix": "eslint --fix",
 		"start": "next start",
 		"typecheck": "tsc --build"
-	},
-	"imports": {
-		"#src/*": "./src/*"
 	},
 	"dependencies": {
 		"next": "catalog:",

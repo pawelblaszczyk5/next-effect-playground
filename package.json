@@ -15,8 +15,8 @@
 		"format:fix": "prettier \".\" --write",
 		"lint": "turbo run lint",
 		"lint:fix": "turbo run lint:fix",
-		"package-json-sorter": "sort-package-json \"package.json\" \"{packages,tooling,apps}/*/package.json\" --check",
-		"package-json-sorter:fix": "sort-package-json \"package.json\" \"{packages,tooling,apps}/*/package.json\"",
+		"sort-package-json": "sort-package-json \"package.json\" \"{packages,tooling,apps}/*/package.json\" --check",
+		"sort-package-json:fix": "sort-package-json \"package.json\" \"{packages,tooling,apps}/*/package.json\"",
 		"spellcheck": "cspell lint \"**\" --no-progress --show-context --show-suggestions",
 		"typecheck": "turbo run typecheck",
 		"update-dependencies": "taze major --write --interactive --recursive --includeLocked --force"
