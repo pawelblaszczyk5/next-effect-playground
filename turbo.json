@@ -16,7 +16,8 @@
 			"dependsOn": ["^build"]
 		},
 		"typecheck": {
-			"dependsOn": ["^transit"]
+			"dependsOn": ["^transit"],
+			"outputs": ["node_modules/.cache/tsbuildinfo/"]
 		},
 		"dev": {
 			"cache": false,

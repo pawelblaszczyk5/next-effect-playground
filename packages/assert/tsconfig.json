@@ -1,9 +1,7 @@
 {
-	"extends": ["@repo/typescript-config/core"],
+	"extends": "@repo/typescript-config/no-build",
 	"compilerOptions": {
-		"lib": ["esnext"],
-		"noEmit": true
+		"lib": ["esnext"]
 	},
-	"include": ["src/**/*.ts", "src/**/*.tsx"],
-	"exclude": ["node_modules"]
+	"include": ["src"]
 }

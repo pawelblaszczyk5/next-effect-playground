@@ -9,6 +9,7 @@
 		"directory": "tooling/typescript-config"
 	},
 	"files": [
-		"core.json"
+		"core.json",
+		"no-build.json"
 	]
 }
