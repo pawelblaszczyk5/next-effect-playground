@@ -11,6 +11,7 @@
 		"module": "Preserve",
 		"target": "ESNext",
 		"noErrorTruncation": true,
+		"allowImportingTsExtensions": true,
 
 		"strict": true,
 		"noUnusedLocals": true,

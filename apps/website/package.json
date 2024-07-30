@@ -21,16 +21,17 @@
 		"#src/*": "./src/*"
 	},
 	"dependencies": {
+		"next": "catalog:",
 		"react": "catalog:",
-		"react-dom": "catalog:",
-		"next": "catalog:"
+		"react-dom": "catalog:"
 	},
 	"devDependencies": {
 		"@repo/eslint-config": "workspace:*",
 		"@repo/typescript-config": "workspace:*",
-		"typescript": "catalog:",
 		"@types/node": "catalog:",
 		"@types/react": "catalog:",
-		"@types/react-dom": "catalog:"
+		"@types/react-dom": "catalog:",
+		"babel-plugin-react-compiler": "0.0.0-experimental-334f00b-20240725",
+		"typescript": "catalog:"
 	}
 }
