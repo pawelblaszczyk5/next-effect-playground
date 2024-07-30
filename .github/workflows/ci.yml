@@ -25,12 +25,7 @@ jobs:
       - name: Setup
         uses: ./.github/composite-actions/setup
 
-      - name: Create database file
-        run: touch apps/website/local/sqlite.db
-
       - name: Run
-        env:
-          DATABASE_LOCAL_URL: file:local/sqlite.db
         run: pnpm build
 
   lint:
