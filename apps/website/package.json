@@ -1,0 +1,36 @@
+{
+	"name": "@repo/website",
+	"version": "0.0.1",
+	"private": true,
+	"description": "Playground website",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pawelblaszczyk5/next-effect-playground",
+		"directory": "apps/website"
+	},
+	"type": "module",
+	"scripts": {
+		"build": "next build",
+		"dev": "next dev --turbo",
+		"lint": "eslint",
+		"lint:fix": "eslint --fix",
+		"start": "next start",
+		"typecheck": "tsc --build"
+	},
+	"imports": {
+		"#src/*": "./*"
+	},
+	"dependencies": {
+		"react": "catalog:",
+		"react-dom": "catalog:",
+		"next": "catalog:"
+	},
+	"devDependencies": {
+		"@repo/eslint-config": "workspace:*",
+		"@repo/typescript-config": "workspace:*",
+		"typescript": "catalog:",
+		"@types/node": "catalog:",
+		"@types/react": "catalog:",
+		"@types/react-dom": "catalog:"
+	}
+}

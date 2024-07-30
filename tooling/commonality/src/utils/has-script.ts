@@ -6,8 +6,8 @@ export const hasScript = (name: string) => {
 	return {
 		level: "error",
 		message: `Package must have a "${name}" script in package.json`,
-		validate: async (ctx) => {
-			const packageJson = await json(ctx.package.path, "package.json").get();
+		validate: async (context) => {
+			const packageJson = await json(context.package.path, "package.json").get();
 
 			if (!packageJson)
 				return {

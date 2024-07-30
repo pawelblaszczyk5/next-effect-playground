@@ -350,9 +350,7 @@ export default tseslint.config(
 				"error",
 				{
 					allowList: {
-						ctx: true,
-						props: true,
-						dir: true,
+						src: true,
 					},
 					checkProperties: true,
 					checkShorthandProperties: true,

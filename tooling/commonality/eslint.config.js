@@ -5,7 +5,7 @@ export default [
 	{
 		languageOptions: {
 			parserOptions: {
-				project: ["./tsconfig.json", "./tsconfig.tooling.json"],
+				projectService: true,
 				tsconfigRootDir: import.meta.dirname,
 			},
 		},

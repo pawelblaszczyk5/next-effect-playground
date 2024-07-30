@@ -5,8 +5,8 @@ import { diff, json } from "commonality";
 export default {
 	level: "error",
 	message: 'Package must have a "typecheck" script in package.json',
-	validate: async (ctx) => {
-		const packageJson = await json(ctx.package.path, "package.json").get();
+	validate: async (context) => {
+		const packageJson = await json(context.package.path, "package.json").get();
 
 		if (!packageJson)
 			return {
