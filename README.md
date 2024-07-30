@@ -1,1 +1,1 @@
-# pawelblaszczyk.dev
+# next-effect-playground
