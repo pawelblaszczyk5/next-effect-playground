@@ -96,7 +96,7 @@ importers:
         specifier: 'catalog:'
         version: 5.5.4
 
-  packages/assert:
+  packages/invariant:
     devDependencies:
       '@repo/eslint-config':
         specifier: workspace:*
