@@ -1,0 +1,22 @@
+{
+	"$schema": "https://commonality.co/config.json",
+	"checks": {
+		"*": [
+			"recommended/has-readme",
+			"recommended/has-codeowner",
+			"recommended/valid-package-name",
+			"recommended/unique-dependency-types",
+			"recommended/sorted-dependencies",
+			"recommended/matching-dev-peer-versions",
+			"recommended/consistent-external-version",
+			"recommended/extends-repository-field",
+			"@repo/commonality/has-description-field"
+		],
+		"typed": ["@repo/commonality/extends-tsconfig-core", "@repo/commonality/has-typecheck-script"],
+		"buildable": ["@repo/commonality/has-build-script"],
+		"lintable": ["@repo/commonality/has-lint-script"]
+	},
+	"constraints": {
+		"*": { "disallow": ["application"] }
+	}
+}

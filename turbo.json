@@ -1,0 +1,26 @@
+{
+	"$schema": "https://turbo.build/schema.json",
+	"globalPassThroughEnv": [],
+	"tasks": {
+		"transit": {
+			"dependsOn": ["^transit"]
+		},
+		"lint": {
+			"dependsOn": ["^transit"]
+		},
+		"lint:fix": {
+			"dependsOn": ["^transit"],
+			"cache": false
+		},
+		"build": {
+			"dependsOn": ["^build"]
+		},
+		"typecheck": {
+			"dependsOn": ["^transit"]
+		},
+		"dev": {
+			"cache": false,
+			"persistent": true
+		}
+	}
+}

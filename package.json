@@ -1,0 +1,51 @@
+{
+	"name": "@repo/root",
+	"version": "0.0.1",
+	"private": true,
+	"description": "Root workspace",
+	"repository": "https://github.com/pawelblaszczyk5/next-effect-playground",
+	"type": "module",
+	"scripts": {
+		"build": "turbo run build",
+		"commonality:check": "commonality check",
+		"commonality:constrain": "commonality constrain",
+		"commonality:studio": "commonality studio",
+		"dev": "turbo run dev",
+		"format": "prettier \".\" --check",
+		"format:fix": "prettier \".\" --write",
+		"lint": "turbo run lint",
+		"lint:fix": "turbo run lint:fix",
+		"package-json-sorter": "sort-package-json \"package.json\" \"packages/*/package.json\" \"tooling/*/package.json\" --check",
+		"package-json-sorter:fix": "sort-package-json \"package.json\" \"packages/*/package.json\" \"tooling/*/package.json\"",
+		"spellcheck": "cspell \"**\" --no-progress --show-context --show-suggestions",
+		"typecheck": "turbo run typecheck",
+		"update-dependencies": "taze major --write --interactive --recursive --includeLocked --force"
+	},
+	"devDependencies": {
+		"@repo/commonality": "workspace:*",
+		"commonality": "^0.2.63",
+		"commonality-checks-recommended": "^0.0.40",
+		"cspell": "^8.13.0",
+		"prettier": "^3.3.3",
+		"sort-package-json": "^2.10.0",
+		"taze": "^0.16.3",
+		"turbo": "2.0.9",
+		"typescript": "^5.5.4"
+	},
+	"packageManager": "pnpm@9.6.0",
+	"engines": {
+		"node": "22.3.0",
+		"pnpm": "9.6.0"
+	},
+	"engineStrict": true,
+	"pnpm": {
+		"peerDependencyRules": {
+			"allowedVersions": {
+				"eslint": "~9.8.0"
+			}
+		},
+		"patchedDependencies": {
+			"eslint-plugin-import-x@3.1.0": "patches/eslint-plugin-import-x@3.1.0.patch"
+		}
+	}
+}
