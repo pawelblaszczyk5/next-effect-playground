@@ -4,7 +4,7 @@
 	"ignorePaths": ["pnpm-lock.yaml", "**.svg", ".git/", ".gitignore", ".vscode/", "./patches/"],
 	"dictionaries": ["lorem-ipsum"],
 	"useGitignore": true,
-	"words": ["buildable", "codeowner", "lintable", "pawelblaszczyk", "taze", "tsbuildinfo", "tseslint"],
+	"words": ["buildable", "codeowner", "lintable", "pawelblaszczyk", "taze", "tsbuildinfo", "tseslint", "typecheck"],
 	"enableGlobDot": true,
 	"enableFiletypes": ["dockerfile", "github-actions-workflow"]
 }

@@ -17,7 +17,7 @@
 		"lint:fix": "turbo run lint:fix",
 		"package-json-sorter": "sort-package-json \"package.json\" \"packages/*/package.json\" \"tooling/*/package.json\" --check",
 		"package-json-sorter:fix": "sort-package-json \"package.json\" \"packages/*/package.json\" \"tooling/*/package.json\"",
-		"spellcheck": "cspell \"**\" --no-progress --show-context --show-suggestions",
+		"spellcheck": "cspell lint \"**\" --no-progress --show-context --show-suggestions",
 		"typecheck": "turbo run typecheck",
 		"update-dependencies": "taze major --write --interactive --recursive --includeLocked --force"
 	},
@@ -34,7 +34,7 @@
 	},
 	"packageManager": "pnpm@9.6.0",
 	"engines": {
-		"node": "22.3.0",
+		"node": "22.5.1",
 		"pnpm": "9.6.0"
 	},
 	"engineStrict": true,

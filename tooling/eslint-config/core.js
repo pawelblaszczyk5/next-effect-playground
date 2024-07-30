@@ -21,32 +21,32 @@ const banExtension = (extension) => {
 	const literalAttributeMatcher = `Literal[value=/\\.${extension}$/]`;
 	return [
 		{
-			// import foo from 'bar.js';
+			// import foo from 'bar.xxx';
 			selector: `ImportDeclaration > ${literalAttributeMatcher}.source`,
 			message,
 		},
 		{
-			// export { foo } from 'bar.js';
+			// export { foo } from 'bar.xxx';
 			selector: `ExportNamedDeclaration > ${literalAttributeMatcher}.source`,
 			message,
 		},
 		{
-			// export * from 'bar.js';
+			// export * from 'bar.xxx';
 			selector: `ExportAllDeclaration > ${literalAttributeMatcher}.source`,
 			message,
 		},
 		{
-			// const foo = import('bar.js');
+			// const foo = import('bar.xxx');
 			selector: `ImportExpression > ${literalAttributeMatcher}.source`,
 			message,
 		},
 		{
-			// type Foo = typeof import('bar.js');
+			// type Foo = typeof import('bar.xxx');
 			selector: `TSImportType > TSLiteralType > ${literalAttributeMatcher}`,
 			message,
 		},
 		{
-			// const foo = require('foo.js');
+			// const foo = require('foo.xxx');
 			selector: `CallExpression[callee.name = "require"] > ${literalAttributeMatcher}.arguments`,
 			message,
 		},
@@ -99,7 +99,8 @@ export default tseslint.config(
 					message: "Use #private instead",
 					selector: ':matches(PropertyDefinition, MethodDefinition)[accessibility="private"]',
 				},
-				...banExtension("js"),
+				...banExtension("ts"),
+				...banExtension("tsx"),
 				...banExtension("jsx"),
 			],
 			"no-return-assign": "error",
@@ -200,6 +201,7 @@ export default tseslint.config(
 					],
 				},
 			],
+			"@typescript-eslint/no-unnecessary-type-parameters": "error",
 			"@typescript-eslint/no-unused-vars": ["error", { ignoreRestSiblings: true }],
 			"@typescript-eslint/no-use-before-define": [
 				"error",
