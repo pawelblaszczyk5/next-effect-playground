@@ -8,7 +8,9 @@ const makeExampleServiceLive = () => {
 	return {
 		greet: (name?: string) => {
 			return Effect.gen(function* () {
-				if (name) return `Hello ${name}!`;
+				if (name) {
+					return `Hello ${name}!`;
+				}
 
 				yield* Effect.log("Anonymous user visited!");
 
@@ -52,7 +54,9 @@ export const defineEffectComponent = <
 		const program = component(props);
 		const result = await runtime.runPromiseExit(program);
 
-		if (Exit.isSuccess(result)) return result.value;
+		if (Exit.isSuccess(result)) {
+			return result.value;
+		}
 
 		return result.cause.pipe(
 			Cause.failureOption,

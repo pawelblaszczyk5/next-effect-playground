@@ -71,7 +71,7 @@ export default tseslint.config(
 		name: "builtin overrides",
 		rules: {
 			"arrow-body-style": ["error", "always"],
-			curly: ["error", "multi", "consistent"],
+			curly: ["error", "all"],
 			"default-case-last": "error",
 			eqeqeq: "error",
 			"linebreak-style": ["error", "unix"],

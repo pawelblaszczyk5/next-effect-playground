@@ -9,20 +9,22 @@ export const hasPackageJsonField = (name: string) => {
 		validate: async (context) => {
 			const packageJson = await json(context.package.path, "package.json").get();
 
-			if (!packageJson)
+			if (!packageJson) {
 				return {
 					message: "package.json does not exist",
 					path: "package.json",
 				};
+			}
 
 			const fieldValue = packageJson[name];
 
-			if (typeof fieldValue !== "string" || fieldValue.length === 0)
+			if (typeof fieldValue !== "string" || fieldValue.length === 0) {
 				return {
 					message: `package.json doesn't have a "${name}" field`,
 					path: "package.json",
 					suggestion: diff({ [name]: packageJson[name] }, { [name]: `Your "${name}" field value` }) ?? "",
 				};
+			}
 
 			return true;
 		},
