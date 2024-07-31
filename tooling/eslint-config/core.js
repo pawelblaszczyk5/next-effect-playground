@@ -350,6 +350,10 @@ export default tseslint.config(
 				{
 					allowList: {
 						src: true,
+						props: true,
+						Props: true,
+						searchParams: true,
+						params: true,
 					},
 					checkProperties: true,
 					checkShorthandProperties: true,
