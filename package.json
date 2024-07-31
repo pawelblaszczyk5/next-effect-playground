@@ -29,7 +29,7 @@
 		"prettier": "^3.3.3",
 		"sort-package-json": "^2.10.0",
 		"taze": "^0.16.3",
-		"turbo": "2.0.9",
+		"turbo": "2.0.10",
 		"typescript": "catalog:"
 	},
 	"packageManager": "pnpm@9.6.0",
@@ -55,7 +55,7 @@
 		},
 		"patchedDependencies": {
 			"eslint-plugin-import-x@3.1.0": "patches/eslint-plugin-import-x@3.1.0.patch",
-			"next@15.0.0-canary.92": "patches/next@15.0.0-canary.92.patch"
+			"next@15.0.0-canary.94": "patches/next@15.0.0-canary.94.patch"
 		}
 	}
 }

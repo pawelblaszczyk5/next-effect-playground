@@ -30,7 +30,7 @@
 		"@eslint/compat": "~1.1.1",
 		"@eslint/eslintrc": "~3.1.0",
 		"@eslint/js": "~9.8.0",
-		"@next/eslint-plugin-next": "15.0.0-canary.92",
+		"@next/eslint-plugin-next": "15.0.0-canary.94",
 		"eslint": "~9.8.0",
 		"eslint-config-flat-gitignore": "~0.1.8",
 		"eslint-import-resolver-typescript": "~3.6.1",
@@ -51,6 +51,6 @@
 		"eslint-plugin-react-refresh": "~0.4.9",
 		"eslint-plugin-regexp": "~2.6.0",
 		"eslint-plugin-unicorn": "~55.0.0",
-		"typescript-eslint": "8.0.0-alpha.60"
+		"typescript-eslint": "8.0.0"
 	}
 }

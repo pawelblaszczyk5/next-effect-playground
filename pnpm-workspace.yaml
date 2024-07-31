@@ -1,14 +1,14 @@
 packages:
-  - "apps/*"
-  - "packages/*"
-  - "features/*"
-  - "tooling/*"
+  - apps/*
+  - packages/*
+  - features/*
+  - tooling/*
 
 catalog:
-  "@types/node": ^22.0.0
+  "@types/node": ^22.0.1
+  next: 15.0.0-canary.94
   react: 0.0.0-experimental-6230622a1a-20240610
   react-dom: 0.0.0-experimental-6230622a1a-20240610
   "@types/react": npm:types-react@19.0.0-rc.1
   "@types/react-dom": npm:types-react-dom@19.0.0-rc.1
   typescript: ^5.5.4
-  next: 15.0.0-canary.92
