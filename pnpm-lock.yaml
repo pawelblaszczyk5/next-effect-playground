@@ -64,6 +64,9 @@ importers:
 
   apps/website:
     dependencies:
+      effect:
+        specifier: ^3.6.0
+        version: 3.6.0
       next:
         specifier: 'catalog:'
         version: 15.0.0-canary.94(patch_hash=pvpxqvsvkxl5dehswcxp4p343u)(babel-plugin-react-compiler@0.0.0-experimental-334f00b-20240725)(react-dom@0.0.0-experimental-6230622a1a-20240610(react@0.0.0-experimental-6230622a1a-20240610))(react@0.0.0-experimental-6230622a1a-20240610)
@@ -2015,6 +2018,9 @@ packages:
 
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
+
+  effect@3.6.0:
+    resolution: {integrity: sha512-7bUV/Ytt058F3YWZJyra63MGA80msTk4AnFiVlvCM65RN7afc3LsvLOHpMifLqX/8CG0eDlJLg2lDLByyEnYGQ==}
 
   electron-to-chromium@1.4.806:
     resolution: {integrity: sha512-nkoEX2QIB8kwCOtvtgwhXWy2IHVcOLQZu9Qo36uaGB835mdX/h8uLRlosL6QIhLVUnAiicXRW00PwaPZC74Nrg==}
@@ -6353,6 +6359,8 @@ snapshots:
       type-fest: 3.13.1
 
   eastasianwidth@0.2.0: {}
+
+  effect@3.6.0: {}
 
   electron-to-chromium@1.4.806: {}
 
