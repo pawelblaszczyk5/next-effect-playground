@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-import { Cause, Context, Data, Effect, Exit, Layer, Logger, ManagedRuntime, Option } from "effect";
+import { Cause, Context, Data, Effect, Either, Exit, Layer, Logger, ManagedRuntime } from "effect";
 import { unstable_noStore } from "next/cache";
 import { unstable_rethrow } from "next/navigation";
 
@@ -59,13 +59,13 @@ export const defineEffectComponent = <
 		}
 
 		return result.cause.pipe(
-			Cause.failureOption,
-			Option.match({
-				onNone: () => {
+			Cause.failureOrCause,
+			Either.match({
+				onLeft: (failure) => {
+					unstable_rethrow(failure.cause);
 					throw new Error("Unexpected error");
 				},
-				onSome: (failure) => {
-					unstable_rethrow(failure.cause);
+				onRight: () => {
 					throw new Error("Unexpected error");
 				},
 			}),
