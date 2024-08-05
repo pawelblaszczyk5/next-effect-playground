@@ -151,7 +151,7 @@ export default tseslint.config(
 			radix: "error",
 			"require-atomic-updates": "error",
 			"require-unicode-regexp": "error",
-			"require-yield": "error",
+			"require-yield": "off",
 			"spaced-comment": ["error", "always"],
 			"symbol-description": "error",
 			yoda: ["error", "never"],
